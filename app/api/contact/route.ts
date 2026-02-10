@@ -20,7 +20,7 @@ export async function POST(request: Request) {
       from: 'Portfolio <onboarding@resend.dev>',
       to: ['dsking32@gmail.com'], // Only to you
       subject: subject || `New message from ${name} on your portfolio`,
-      reply_to: email, // But reply-to is sender's email
+      replyTo: email, // FIXED: Changed from reply_to to replyTo
       text: `
         New message from your portfolio:
         
@@ -71,7 +71,7 @@ export async function POST(request: Request) {
     }
 
     return NextResponse.json(
-      { success: true, message: 'Email sent successfully! I\'ll get back to you soon.' },
+      { success: true, message: 'Email sent successfully! I'\''ll get back to you soon.' },
       { status: 200 }
     )
   } catch (error) {
