@@ -2,8 +2,6 @@
 const nextConfig = {
   images: {
     formats: ['image/avif', 'image/webp'],
-    // If you're having issues with external images, add domains here
-    // domains: ['example.com'],
   },
 }
 
