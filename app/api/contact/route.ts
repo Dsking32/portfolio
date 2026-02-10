@@ -71,7 +71,7 @@ export async function POST(request: Request) {
     }
 
     return NextResponse.json(
-      { success: true, message: 'Email sent successfully! I'll get back to you soon.' },
+      { success: true, message: 'Email sent successfully! I\'ll get back to you soon.' },
       { status: 200 }
     )
   } catch (error) {
@@ -82,4 +82,3 @@ export async function POST(request: Request) {
     )
   }
 }
-
